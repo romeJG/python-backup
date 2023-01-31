@@ -1,9 +1,9 @@
 nums=[]
 n=''
-m=int(input("howmany columns: "))
-for i in range(m):
+col=int(input("howmany columns: "))
+for i in range(col):
     nums.append(int(input("enter a number: "))) ##transforms string input to int
-#makes ls "nums" into Int
+    
 max = max(nums)#gets the highest number in the array
 for i in range(max):
     for j in range(len(nums)):##logic sa forloop na to is if yung nums[j] is < the max it will print a space otherwise will print an asterisk
