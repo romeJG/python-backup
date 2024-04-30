@@ -21,14 +21,17 @@ for i in range(max):
         # If the current number is less than the max, print a space
         if nums[j]<max:
             #end='' so that walang new line na ma print
-            print(f'{n:<3}',end='')
+            print(f'{n:<4}',end='')
         # If the current number is equal to or greater than the max, print an asterisk
         else:
             # the n:<2 is to format the spacing for the output
-            print(f'*{n:<2}',end='')
+            print(f'*{n:<3}',end='')
     #so that it wil go to the next line :>
     print()
     max-=1
 for i in nums:
-    print(i,' ',end='')
+    if i<=10:
+        print(i,'  ',end='')
+    else:
+        print(i,' ',end='')
     
